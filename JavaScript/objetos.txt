@@ -1,0 +1,33 @@
+Nos capítulos anteriores, nós aprendemos sobre Arrays (Listas). Arrays são ótimos para guardar uma fila de nomes: ["Fallen", "Coldzera", "Taco"]. Mas pense bem: um jogador profissional é apenas um nome? Não! Ele possui um nome, uma função (como Atirador ou Suporte) e uma pontuação no ranking.
+
+Se fôssemos usar apenas variáveis soltas, teríamos que criar três variáveis diferentes para cada pessoa, o que viraria uma bagunça. A solução do JavaScript para representar coisas do mundo real é o Objeto.
+
+Um Objeto agrupa várias características (que chamamos de propriedades) em uma única variável, abrindo e fechando chaves {}. É exatamente como preencher a ficha de inscrição de um jogador. Para acessar uma informação específica dentro do objeto, nós usamos a notação de ponto (.).
+
+
+
+Trecho de Código: JavaScript
+
+// Criando o objeto (A Ficha do Jogador) 
+
+let jogadorEstrela = { 
+
+nome: "Fallen", 
+
+funcao: "Capitão / Atirador", 
+
+pontuacao: 2500, 
+
+estaAtivo: true 
+
+}; 
+
+// Acessando as informações com o uso do ponto (.) 
+
+console.log("--- PERFIL DO ATLETA ---"); 
+
+console.log("Nome: " + jogadorEstrela.nome); 
+
+console.log("Rota de Jogo: " + jogadorEstrela.funcao); 
+
+// Podemos até alterar uma propriedade específica jogadorEstrela.pontuacao = jogadorEstrela.pontuacao + 100; console.log("Nova pontuação após a final: " + jogadorEstrela.pontuacao);
